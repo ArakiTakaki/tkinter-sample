@@ -21,5 +21,9 @@ font2 = font.Font(family='Times', size=40)
 label2 = tkinter.Label(root, text="See you", fg="red", font=font2)
 label2.pack(side="top")
 
+# 画面の下部にステータスバーを追加する
+status = tkinter.Label(root, text="Now processing..", borderwidth=2, relief="groove")
+status.pack(side=tkinter.BOTTOM, fill=tkinter.X)
+
 # 実行
 root.mainloop()
