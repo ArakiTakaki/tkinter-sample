@@ -13,9 +13,35 @@ root.geometry("1010x1010")
 label1 = tkinter.Label(root, text="Hallo")
 label1.pack(side="top")
 
+text = "test"
 font1 = font.Font(family='Helvetica', size=20, weight='bold')
-label2 = tkinter.Label(root, text="Bye", bg="blue", font=font1)
+label2 = tkinter.Label(root, text=text, bg="blue", font=font1)
 label2.pack(side="top")
+
+
+# text viewの略
+tvSampleText = "sample text"
+tvSampleBg = "red"
+tvSampleFg = "blue"
+
+# fontの略
+ftMainFontFamily = "Helvetica"
+ftMainSize = 20
+ftMainWeight = "bold"
+
+ftMain = font.Font(
+  family=ftMainFontFamily,
+  size=ftMainSize,
+  weight=ftMainWeight)
+
+tvSampleLabel = tkinter.Label(
+  root,
+  text=tvSampleText,
+  fg=tvSampleFg,
+  bg=tvSampleBg,
+  font=ftMain)
+
+tvSampleLabel.pack(side=tkinter.TOP)
 
 font2 = font.Font(family='Times', size=40)
 label2 = tkinter.Label(root, text="See you", fg="red", font=font2)
